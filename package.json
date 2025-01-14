@@ -17,7 +17,9 @@
     "zod": "3.24.1"
   },
   "devDependencies": {
+    "@rocketseat/eslint-config": "2.2.2",
     "@types/node": "22.10.6",
+    "eslint": "8.57.1",
     "tsup": "8.3.5",
     "tsx": "4.19.2",
     "typescript": "5.7.3"
