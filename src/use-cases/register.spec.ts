@@ -3,7 +3,7 @@ import { compare } from 'bcryptjs'
 
 import { RegisterUseCase } from './register'
 import { InMemoryUsersRepository } from '@/repositories/in-memory/in-memory-users-repository'
-import { UserAlreadyExistsError } from './errors/user-already-exists'
+import { UserAlreadyExistsError } from './errors/user-already-exists-error'
 
 describe('Register Use Case', async () => {
   test('if user is created with the correct data', async () => {
