@@ -9,7 +9,7 @@ export async function searh(request: FastifyRequest, reply: FastifyReply) {
     page: z.coerce.number().min(1).default(1),
   })
 
-  const { search, page } = searchGymQuerySchema.parse(request.body)
+  const { search, page } = searchGymQuerySchema.parse(request.query)
 
   const searchGymsUseCase = makeSearchGymsUseCase()
 
